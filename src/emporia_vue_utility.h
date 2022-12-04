@@ -41,9 +41,9 @@
 #define LED_PIN_LINK 32
 #define LED_PIN_WIFI 33
 
-class EmporiaVueUtility : public Component,  public UARTDevice {
+class EmporiaVueUtility : public Component,  public UARTDevice, public I2CDevice {
     public:
-        EmporiaVueUtility(UARTComponent *parent): UARTDevice(parent) {}
+        EmporiaVueUtility(UARTComponent *parent): UARTDevice(parent): I2CDevice(parent) {}
         Sensor *kWh_net      = new Sensor();
         Sensor *kWh_consumed = new Sensor();
         Sensor *kWh_returned = new Sensor();

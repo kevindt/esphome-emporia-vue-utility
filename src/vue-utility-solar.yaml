@@ -37,6 +37,12 @@ uart:
     tx_pin: GPIO22
     baud_rate: 115200
 
+# This I2C port is being tested
+    id: emporia_i2c
+    sda: GPIO13
+    scl: GPIO14
+    Scan: True
+
 sensor:
     - platform: custom
       lambda: |-

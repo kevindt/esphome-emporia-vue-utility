@@ -7,7 +7,7 @@ esphome:
     platform: ESP32
     board: esp-wrover-kit
     includes:
-        - emporia_vue_utility_i2c.h
+        - emporia_vue_utility_dev.h
     libraries:
         "adafruit/RTClib"
 

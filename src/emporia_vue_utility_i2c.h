@@ -1,6 +1,6 @@
 #include "esphome.h"
 #include "sensor.h"
-
+#include "RTClib.h"
 
 // Extra meter reading response debugging
 #define DEBUG_VUE_RESPONSE true

@@ -1,6 +1,5 @@
 #include "esphome.h"
 #include "sensor.h"
-#include "adafruit/RTClib.h"
 
 // Extra meter reading response debugging
 #define DEBUG_VUE_RESPONSE true
@@ -45,7 +44,6 @@
 class EmporiaVueUtility : public Component,  public UARTDevice {
     public:
         EmporiaVueUtility(UARTComponent *parent): UARTDevice(parent) {}
-        RTC_DS3231 rtc;
         Sensor *kWh_net      = new Sensor();
         Sensor *kWh_consumed = new Sensor();
         Sensor *kWh_returned = new Sensor();

@@ -46,6 +46,11 @@ i2c:
     scl: GPIO14
     scan: True
 
+time:
+    - platform: DS1307
+      i2c_id: emporia_i2c
+      id: ds1307_time
+
 sensor:
     - platform: custom
       lambda: |-

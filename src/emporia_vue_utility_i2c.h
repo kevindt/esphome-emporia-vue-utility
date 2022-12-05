@@ -1,6 +1,6 @@
 #include "esphome.h"
 #include "sensor.h"
-#include "esphome/components/ds1307/ds1307.h"
+#include "ds1307/ds1307.h"
 
 // Extra meter reading response debugging
 #define DEBUG_VUE_RESPONSE true

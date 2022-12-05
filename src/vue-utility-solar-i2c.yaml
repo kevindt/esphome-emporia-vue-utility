@@ -8,6 +8,8 @@ esphome:
     board: esp-wrover-kit
     includes:
         - emporia_vue_utility_i2c.h
+    libraries:
+        "adafruit/RTClib"
 
 # Add your own wifi credentials
 wifi:

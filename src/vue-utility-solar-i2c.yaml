@@ -47,7 +47,7 @@ i2c:
 sensor:
     - platform: custom
       lambda: |-
-        auto vue = new EmporiaVueUtility(id(emporia_uart),id(emporia_i2c));
+        auto vue = new EmporiaVueUtility(id(emporia_uart));
         App.register_component(vue);
         return {vue->kWh_consumed, vue->kWh_returned, vue->W, vue->kWh_net};
       sensors:

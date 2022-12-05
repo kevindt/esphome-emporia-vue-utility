@@ -43,7 +43,7 @@
 
 class EmporiaVueUtility : public Component,  public UARTDevice, public I2CDevice {
     public:
-        EmporiaVueUtility(UARTComponent *parent): UARTDevice(parent), I2CDevice(parent) {}
+        EmporiaVueUtility(UARTComponent *parent): UARTDevice(parent) {}
         Sensor *kWh_net      = new Sensor();
         Sensor *kWh_consumed = new Sensor();
         Sensor *kWh_returned = new Sensor();

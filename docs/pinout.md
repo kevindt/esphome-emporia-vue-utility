@@ -9,9 +9,9 @@ JTAG header for the ESP32 module.  The pinout is the same as as the [ESP-Prog](h
 | Pin | ESP Pin | ESP Port | Description |
 | --- | ------- | -------- | ----------- |
 |  1  |         |          |      +3v3   |
-|  2  |    13   |  GPIO14  |   JTAG TMS  |
+|  2  |    13   |  GPIO14  |   JTAG TMS  | SCL
 |  3  |         |          |        GND  |
-|  4  |    16   |  GPIO13  |   JTAG TCK  |
+|  4  |    16   |  GPIO13  |   JTAG TCK  | SDA
 |  5  |         |          |        GND  |
 |  6  |    23   |  GPIO15  |   JTAG TDO  |
 |  7  |         |          |        GND  |
